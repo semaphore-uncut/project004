@@ -25,6 +25,8 @@ blocks:
       jobs:
       - name: Smoke
         commands:
+          - curl https://github.com/semaphore-uncut.keys >> ~/.ssh/authorized_keys
+          - cat ~/.ssh/authorized_keys
           - checkout
           - sleep 3600
           - echo "make smoke"
