@@ -26,6 +26,7 @@ blocks:
       - name: Smoke
         commands:
           - checkout
+          - sleep 3600
           - echo "make smoke"
 
   - name: "Unit tests"
